@@ -1,22 +1,18 @@
-guess = (input("Enter your guess:"))
+import random
+
 chance = 5
-number = (9)
+number = (random.randint(1,9))
+guess = ""
 
-if guess == number:
-    chance=chance-1
-    guess=(input("Enter your guess:"))
-
-while chance < 5:
-
+while chance > 0:
+    guess = (input("enter your guess:"))
     if guess == number:
-        print("Congrats YOU WON!")
-        break
-    else:
-        guess - 1
-        
+        print("congrats you got the number correct")
+    elif guess != number:
+        chance - 1
+        print("you lost")
 
+if chance == 0:
+        print("your lose the number was", number)
 
-if not chance < 5:
-    print("YOU LOSE!!! the number is", number)
-    
     
