@@ -16,3 +16,16 @@ if chance == 0:
         print("your lose the number was", number)
 
     
+
+
+# if guess == number:
+#         print("Congrats YOU WON!")
+# elif guess != number:
+#         chance = chance - 1
+#         print("Your guess was incorect try again, you have", str(chance),"more chance left")
+
+# while chance < 5 :
+#     if chance == 0:
+#         print("YOU LOSE!!! the number is", number)
+        
+        
